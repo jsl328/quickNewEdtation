@@ -29,7 +29,7 @@ showCatalog = (td) => {
     catalogObj ={};
     /*
         //这个就是最终返回的数据,数据接口如下:
-        [{catalogObj:[{id:'',href:'',title:''}]},{catalogObj:[{id:'',href:'',title:''}]},...}]
+        catalogObj = [{catalogAry:[{id:'',href:'',title:''},...]},{catalogObj:[{id:'',href:'',title:''},...]},{...}]
     */
     if (nodeArr !== null && nodeArr !== [] && nodeArr !== undefined) {
         for (let key in nodeArr) {
