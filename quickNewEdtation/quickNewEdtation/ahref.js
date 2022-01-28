@@ -29,7 +29,7 @@ showCatalog = (td) => {
     catalogObj ={};
     /*
         //这个就是最终返回的数据,数据接口如下:
-        [{catalogObj:[{id:'',href:'',title:''},{id:'',href:'',title:''},{id:'',href:'',title:''},...],}]
+        [{catalogObj:[{id:'',href:'',title:''}]},{catalogObj:[{id:'',href:'',title:''}]},...}]
     */
     if (nodeArr !== null && nodeArr !== [] && nodeArr !== undefined) {
         for (let key in nodeArr) {
@@ -54,7 +54,7 @@ showCatalog = (td) => {
     } else {
        qpic_logObject('empty',2);
     }
-    qpic_logObject(catalogObj,2);
+    // qpic_logObject(catalogObj,2);
 }
 
 function getAOfTable() {
