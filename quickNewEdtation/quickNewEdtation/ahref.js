@@ -36,10 +36,10 @@ showCatalog = (td) => {
             let str = nodeArr[key];
             if (str.indexOf("#") >= 0) {
                 hrefArr.push((hrefReg.exec(str))[2]);//放下载url
-                codeArr.push((hrefReg.exec(str))[4].innerHTML);//放标题,没搞定
+                // codeArr.push((hrefReg.exec(str))[4].innerHTML);//放标题,没搞定
             }else{
                 hrefArr.push((hrefReg.exec(str))[2]);
-                codeArr.push((hrefReg.exec(str))[4].innerHTML);//放标题,没搞定
+                // codeArr.push((hrefReg.exec(str))[4].innerHTML);//放标题,没搞定
             }
         }
         // qpic_logObject("codeArr"+hrefArr,2);
@@ -54,7 +54,7 @@ showCatalog = (td) => {
     } else {
        qpic_logObject('empty',2);
     }
-    // qpic_logObject(catalogObj,2);
+    qpic_logObject(catalogObj,2);
 }
 
 function getAOfTable() {
