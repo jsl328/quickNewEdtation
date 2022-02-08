@@ -14,7 +14,7 @@
 #import "VideoDownloadManager.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
+//#define Space
 @interface ViewController ()
 @property(nonatomic,strong)WKWebView *webView;
 @property(nonatomic,strong)WKWebViewConfiguration *conf;
@@ -48,7 +48,7 @@
 -(WKWebView *)webView{
     if (!_webView) {
         //初始化
-        _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) configuration:[self conf]];
+        _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 100) configuration:[self conf]];
         // UI代理
         _webView.UIDelegate = [WKUIPreDelegate sharedInstance];;
         // 导航代理

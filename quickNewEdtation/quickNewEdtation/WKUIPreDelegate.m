@@ -59,7 +59,7 @@ static WKUIPreDelegate *_WKUIDelegate =nil;
 
 -(void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
 {
-    NSLog(@"%@",message);
+    NSLog(@"----%@",message);
     completionHandler();
 }
 -(void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
